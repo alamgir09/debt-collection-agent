@@ -10,7 +10,7 @@ export function Message({ message }: MessageProps) {
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"} mb-4`}>
       <div
-        className={`max-w-[80%] rounded-2xl px-4 py-3 animate-fade-in ${
+        className={`max-w-[80%] rounded-2xl px-4 py-3 animate-fade-in break-words whitespace-pre-wrap ${
           isUser ? "bg-teal-500 text-white rounded-tr-none" : "bg-gray-100 text-gray-800 rounded-tl-none"
         }`}
       >
