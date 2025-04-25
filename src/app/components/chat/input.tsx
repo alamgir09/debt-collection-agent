@@ -36,8 +36,11 @@ export function ChatInput({ value, onChange, onSubmit, isLoading }: ChatInputPro
   }
 
   return (
-    <form onSubmit={onSubmit} className="border-t border-gray-200 bg-white p-4 sticky bottom-8 z-50">
-      <div className="flex items-end rounded-lg border border-gray-300 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500 relative">
+    <form 
+      onSubmit={onSubmit} 
+      className="border-t border-gray-200 bg-white/80 backdrop-blur-sm p-4 sticky sm:bottom-16 sm:mt-8 mt-4 bottom-12 z-50 shadow-sm"
+    >
+      <div className="flex items-end rounded-lg border border-gray-300 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500 relative max-w-3xl mx-auto">
         <textarea
           ref={textareaRef}
           value={value}
