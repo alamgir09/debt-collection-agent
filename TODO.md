@@ -23,18 +23,18 @@
 - [x] Implement core functions:
   - [x] Initial $2,400 debt notification
   - [x] Basic message handling
-  - [ ] Payment plan negotiation logic
-  - [ ] Payment validation (reject unrealistic offers)
-  - [ ] URL generation: `collectwise.com/payments?termLength={}&totalDebtAmount={}&termPaymentAmount={}`
+  - [X] Payment plan negotiation logic
+  - [X] Payment validation (reject unrealistic offers)
+  - [X] URL generation: `collectwise.com/payments?termLength={}&totalDebtAmount={}&termPaymentAmount={}`
 
 ## 🔄 Integration
 - [x] Connect frontend to BAML
 - [x] Implement real-time chat updates
 - [x] Add error handling
-- [ ] Test payment plan scenarios:
-  - [ ] $800/month for 3 months
-  - [ ] $400/month for 6 months
-  - [ ] Handle unrealistic proposals
+- [X] Test payment plan scenarios:
+  - [X] $800/month for 3 months
+  - [X] $400/month for 6 months
+  - [X] Handle unrealistic proposals
 
 ## 🧪 Testing & Polish
 - [x] Basic error states and recovery
