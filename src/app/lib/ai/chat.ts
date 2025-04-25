@@ -54,7 +54,10 @@ async function handlePaymentValidation(
   );
 
   if (validation.isValid) {
-    return `${response.message}\n\nPayment Plan: $${plan.termPaymentAmount}\n\nFrequency: ${plan.frequency}\n\nTerm: ${plan.termLength} months\n\nHere's your payment link: ${response.paymentUrl}`;
+    const paymentDetails = response.paymentUrl ? 
+      `\n\nPayment Plan: $${plan.termPaymentAmount}\nFrequency: ${plan.frequency}\nTerm: ${plan.termLength} months\n\nHere's your payment link: ${response.paymentUrl}` : 
+      '';
+    return `${response.message}${paymentDetails}`;
   }
 
   // Add validation feedback to messages
