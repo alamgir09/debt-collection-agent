@@ -36,22 +36,27 @@ export function ChatInput({ value, onChange, onSubmit, isLoading }: ChatInputPro
   }
 
   return (
-    <form onSubmit={onSubmit} className="border-t border-gray-200 bg-white p-4 sticky bottom-0">
-      <div className="flex items-end rounded-lg border border-gray-300 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
+    <form onSubmit={onSubmit} className="border-t border-gray-200 bg-white p-4 sticky bottom-8 z-50">
+      <div className="flex items-end rounded-lg border border-gray-300 bg-white focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500 relative">
         <textarea
           ref={textareaRef}
           value={value}
           onChange={onChange}
           rows={1}
           placeholder="Type your message..."
-          className="flex-1 min-h-[44px] max-h-[96px] resize-none border-0 bg-transparent py-3 px-3 focus:outline-none text-black overflow-y-auto"
+          className="flex-1 min-h-[44px] max-h-[96px] resize-none border-0 bg-transparent py-2.5 px-3 focus:outline-none text-black overflow-y-auto w-full"
+          style={{
+            lineHeight: '1.5',
+            overflowWrap: 'break-word',
+            wordBreak: 'break-word'
+          }}
           disabled={isLoading}
           onKeyDown={handleKeyDown}
         />
         <button
           type="submit"
           disabled={isLoading || !value.trim()}
-          className="p-3 text-teal-500 hover:text-teal-600 disabled:text-gray-300 disabled:cursor-not-allowed"
+          className="p-2.5 text-teal-500 hover:text-teal-600 disabled:text-gray-300 disabled:cursor-not-allowed flex-shrink-0"
         >
           <Send size={20} />
         </button>
