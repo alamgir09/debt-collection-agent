@@ -1,10 +1,8 @@
 "use client"
 
 import type React from "react"
-
-import { useState, useRef, useEffect } from "react"
+import { useRef, useEffect } from "react"
 import { Send } from "lucide-react"
-import { handleChatMessage } from "@/app/lib/ai/chat"
 
 interface ChatInputProps {
   value: string

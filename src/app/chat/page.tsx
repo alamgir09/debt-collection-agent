@@ -2,7 +2,7 @@
 
 import { ChatContainer } from "@/app/components/chat/container"
 import { ChatInput } from "@/app/components/chat/input"
-import { useMemo, useState, useEffect, useRef } from "react"
+import { useMemo, useState, useEffect } from "react"
 import { handleChatMessage } from "@/app/lib/ai/chat"
 import type { MyUserMessage } from "@/baml_client"
 
