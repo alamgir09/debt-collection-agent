@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# planning
+PLAN.md
+ASSIGNMENT.md
+ChatbotScreen.tsx
+Dashboard.tsx
